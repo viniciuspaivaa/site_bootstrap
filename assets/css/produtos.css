@@ -1,6 +1,17 @@
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-image: url(../img/background-grelha.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+main {
+    max-width: fit-content;
+    min-height: 100vh;
+    background-color: white;
 }
 
 .section-title {
@@ -14,7 +25,7 @@ body {
     margin: 2px;
 }
 
-#classicos-section {
+.card-section {
     display: flex;
     justify-content: center;
 }
@@ -52,7 +63,19 @@ body {
 }
 
 @media (max-width: 600px) {
-    #classicos-section {
-    
+    body {
+        align-items: center !important;
+        background-image: none; 
+    }
+
+    .card-section { 
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 925px) {
+    body {
+        align-items: normal;
     }
 }
