@@ -5,11 +5,12 @@ body {
     background-image: url(../img/background-grelha.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100%;
 }
 
 main {
     max-width: fit-content;
+    height: 100%;
     min-height: 100vh;
     background-color: white;
 }
