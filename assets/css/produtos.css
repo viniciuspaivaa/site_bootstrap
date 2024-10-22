@@ -1,11 +1,11 @@
-#burguer-section {
+body {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .section-title {
     display: flex;
+    justify-content: center;
     margin: 20px 10px;
 }
 
@@ -16,18 +16,25 @@
 
 #classicos-section {
     display: flex;
+    justify-content: center;
 }
 
 .card {
     width: 10rem;
-    display: flex !important;
     margin: 10px;
-    max-width: 288px !important;
+}
+
+.card-img-top {
+    max-width: 288px;
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
+}
+
+.card-body > h5, p{
+    display: flex;
 }
 
 .button-container {
@@ -44,8 +51,8 @@
     width: 100vw;
 }
 
-/* @media (max-width: 920px) {
+@media (max-width: 600px) {
     #classicos-section {
-        display: block;
+    
     }
-} */
+}
