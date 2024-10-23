@@ -1,0 +1,35 @@
+
+
+#title {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    margin: 0 !important;
+    text-align: center;
+}
+
+#subtitle {
+    margin: 20px;
+    font-weight: bold;
+    color: gray;
+}
+
+#carousel-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+#carousel {
+    max-width: 800px;
+    margin: 10px;
+}
+
+.d-block {
+    border-radius: 5px;
+}

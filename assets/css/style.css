@@ -10,7 +10,7 @@
 header {
     height: 110px;
     background-color: #d2691e;
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -43,6 +43,10 @@ header {
     color: white;
 }
 
+.hamburguer-links {
+    display: none;
+}
+
 .bi-list {
     font-size: 40px;
 }
@@ -70,5 +74,6 @@ header {
         text-decoration: none;
         color: white;
         font-weight: bold;
+        display: flex;
     }
 }
