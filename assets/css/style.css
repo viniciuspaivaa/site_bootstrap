@@ -33,6 +33,10 @@ header {
     font-weight: bold;
 }
 
+#hamburguer-menu {
+    display: none;
+}
+
 #hamburguer-icon {
     display: none;
     margin-right: 20px;
@@ -43,19 +47,19 @@ header {
     font-size: 40px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     #nav-bar {
         display: none;
     }
 
     #hamburguer-icon {
-        display: block;
+        display: flex;
     }
 
     #hamburguer-menu {
         height: 130px;
         width: 100vw;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
