@@ -24,6 +24,7 @@ header {
 #nav-bar {
     margin-right: 35px;
     display: flex;
+    align-items: center;
     gap: 25px;
 }
 
@@ -31,6 +32,12 @@ header {
     text-decoration: none;
     color: white;
     font-weight: bold;
+}
+
+.bi-cart-fill {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
 }
 
 #hamburguer-menu {
@@ -75,5 +82,12 @@ header {
         color: white;
         font-weight: bold;
         display: flex;
+        align-items: center;
+        height: 27px;
+    }
+
+    #hamburguer-links-cart {
+        font-size: 18px;
+        margin-left: 5px;
     }
 }
