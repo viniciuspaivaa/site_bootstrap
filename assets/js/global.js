@@ -3,8 +3,7 @@ const body = document.getElementById('body');
 const header = document.createElement('header');
 
 const globalCSS = "<link rel='stylesheet' href='/assets/css/global.css'>";
-const pageTitle = "<title>Hamburgueria</title>"
-
+const favicon
 const headerContent = 
 "<a href='/index.html'><img id='logo' src='/assets/img/logo.png' alt='logo hamburguer'></a>" +
 "<div id='hamburguer-icon'>" +
@@ -16,9 +15,8 @@ const headerContent =
 "<a href='/assets/html/contato.html'>CONTATO</a>" +
 "</div>";
 
-head.innerHTML += globalCSS;
-head.innerHTML += pageTitle;
 header.innerHTML += headerContent;
+head.innerHTML += globalCSS;
 
 const hamburguerMenu = document.getElementById("hamburguer-menu");
 const hamburguerIcon = document.getElementsByClassName("bi-list")[0];
@@ -31,3 +29,4 @@ function toggleDisplay() {
     }
 }
 
+hamburguerIcon.addEventListener('click', toggleDisplay);
