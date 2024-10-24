@@ -3,7 +3,10 @@ const body = document.getElementById('body');
 const header = document.createElement('header');
 
 const globalCSS = "<link rel='stylesheet' href='/assets/css/global.css'>";
-const favicon
+head.innerHTML += globalCSS;
+
+const favicon = "<link rel='shortcut icon' href='/assets/img/favicon_io/favicon.ico' type='image/x-icon'>";
+
 const headerContent = 
 "<a href='/index.html'><img id='logo' src='/assets/img/logo.png' alt='logo hamburguer'></a>" +
 "<div id='hamburguer-icon'>" +
@@ -14,9 +17,8 @@ const headerContent =
 "<a href='/assets/html/quemsomos.html'>QUEM SOMOS</a>" +
 "<a href='/assets/html/contato.html'>CONTATO</a>" +
 "</div>";
-
+body.prepend(header);
 header.innerHTML += headerContent;
-head.innerHTML += globalCSS;
 
 const hamburguerMenu = document.getElementById("hamburguer-menu");
 const hamburguerIcon = document.getElementsByClassName("bi-list")[0];
